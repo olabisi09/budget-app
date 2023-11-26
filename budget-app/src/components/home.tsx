@@ -39,7 +39,7 @@ const Home = () => {
   const setToCategory = () => setCurrentView("category");
 
   return (
-    <Box py="1.25rem" px="1.87rem">
+    <Box py="1.25rem" px="1.87rem" overflow={"scroll"}>
       <Heading>Budget</Heading>
       <Flex marginBlockStart="1.75rem" gap="0.62rem">
         <Wrap>
@@ -64,7 +64,7 @@ const Home = () => {
         N120,000
       </Box>
 
-      <Tabs>
+      <Tabs marginTop={"1.88rem"}>
         <TabList
           display="flex"
           justifyContent="space-between"
@@ -80,7 +80,7 @@ const Home = () => {
               as={IconButton}
               aria-label="Options"
               icon={<GoKebabHorizontal />}
-              variant="outline"
+              variant="unstyled"
             />
             <MenuList>
               <MenuItem
@@ -162,8 +162,8 @@ const Home = () => {
                   </Text>
                 </VStack>
               </Td>
-              <Td isNumeric>
-                <b>N10,000/</b>N24,000
+              <Td color={"#C1C4CD"} isNumeric>
+                <b style={{ color: "#001233" }}>N10,000/</b>N24,000
               </Td>
             </Tr>
           </Tbody>

@@ -10,6 +10,7 @@ const Overview = ({
   if (currentView === "expenses") {
     return (
       <TabPanel
+        marginTop={"2rem"}
         display={"flex"}
         flexDirection={"column"}
         justifyContent={"center"}
@@ -30,8 +31,10 @@ const Overview = ({
             49%
           </Text>
         </Box>
-        <Text>Amount spent so far</Text>
-        <Text>
+        <Text color={"#707480"} marginTop={"1.31rem"}>
+          Amount spent so far
+        </Text>
+        <Text color={"#0466C8"}>
           <b>N50,000/</b>N120,000
         </Text>
       </TabPanel>
@@ -39,14 +42,17 @@ const Overview = ({
   }
   return (
     <TabPanel
+      marginTop={"2rem"}
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}
       alignItems={"center"}
     >
       <ChartCategory />
-      <Text>Amount spent so far</Text>
-      <Text>
+      <Text color={"#707480"} marginTop={"1.31rem"}>
+        Amount spent so far
+      </Text>
+      <Text color={"#0466C8"}>
         <b>N50,000/</b>N120,000
       </Text>
     </TabPanel>

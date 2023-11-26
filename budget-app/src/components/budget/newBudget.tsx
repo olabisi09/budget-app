@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { useFormikContext } from "formik";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { Budget, InitProps } from "./types";
+import { Budget } from "./types";
 
 interface StepProps {
   activeStep: number;
